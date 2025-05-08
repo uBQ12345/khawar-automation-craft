@@ -87,8 +87,8 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium">Google Verified</p>
-                  <p className="text-xs text-gray-400">Trusted Expert</p>
+                  <p className="text-sm font-medium">Make.com Expert</p>
+                  
                 </div>
               </div>
             </div>
