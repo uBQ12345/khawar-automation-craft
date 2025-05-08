@@ -53,7 +53,12 @@ const Header = () => {
   );
 };
 
-const NavLinks = ({ isMobile = false, setIsMenuOpen = () => {} }) => {
+interface NavLinksProps {
+  isMobile?: boolean;
+  setIsMenuOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavLinks = ({ isMobile = false, setIsMenuOpen }: NavLinksProps) => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
@@ -64,7 +69,7 @@ const NavLinks = ({ isMobile = false, setIsMenuOpen = () => {} }) => {
   ];
   
   const handleClick = () => {
-    if (isMobile) {
+    if (isMobile && setIsMenuOpen) {
       setIsMenuOpen(false);
     }
   };
