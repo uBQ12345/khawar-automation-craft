@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-dark-bg">
+  return <section id="about" className="py-20 bg-dark-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 reveal">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
@@ -26,10 +23,7 @@ const AboutSection = () => {
                 <p className="text-sm text-gray-500">Class of 2024</p>
               </div>
               
-              <Button variant="outline" className="group">
-                <Download className="mr-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
-                Download Resume
-              </Button>
+              
             </div>
           </div>
           
@@ -67,8 +61,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
