@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 
@@ -7,7 +6,7 @@ const PortfolioSection = () => {
     {
       title: "Lead Generation System",
       description: "Replaced manual spreadsheets with an automated pipeline that captures, scores, and distributes leads to sales teams. Increased lead processing by 300%.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+      image: "/lovable-uploads/199b9382-abe4-47e7-a4d5-37488b871f4f.png",
       tags: ["n8n", "API Integration", "Lead Scoring"]
     },
     {
