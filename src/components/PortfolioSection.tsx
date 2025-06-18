@@ -7,7 +7,7 @@ const PortfolioSection = () => {
       title: "Lead Generation System",
       description: "Replaced manual spreadsheets with an automated pipeline that captures, scores, and distributes leads to sales teams. Increased lead processing by 300%.",
       image: "/lovable-uploads/199b9382-abe4-47e7-a4d5-37488b871f4f.png",
-      tags: ["n8n", "API Integration", "Lead Scoring"]
+      tags: ["n8n", "API Integration", "Lead Scoring", "Make.com"]
     },
     {
       title: "RAG-Style AI Agent",
