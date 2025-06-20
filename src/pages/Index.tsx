@@ -6,7 +6,6 @@ import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialSection from "@/components/TestimonialSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { useScrollReveal } from "@/utils/scrollReveal";
@@ -29,7 +28,6 @@ const Index = () => {
         <AboutSection />
         <SkillsSection />
         <PortfolioSection />
-        <TestimonialSection />
         <ServicesSection />
         <ContactSection />
       </main>
