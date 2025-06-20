@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
@@ -74,7 +75,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-neon rounded-full blur opacity-70"></div>
               <div className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden relative border-4 border-dark-bg">
-                <img alt="Khawar Sultan" className="w-full h-full object-cover object-center" src="/lovable-uploads/17c5da59-50c8-405f-a419-ba4491fe6520.png" />
+                <img alt="Khawar Sultan" className="w-full h-full object-cover object-center" src="/lovable-uploads/7382f7f6-af74-4765-b1ac-16ce73a47bb3.png" />
               </div>
             </div>
             
@@ -87,7 +88,7 @@ const HeroSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium">Make.com Expert</p>
+                  <p className="text-sm font-medium">Make.com Expert</p>
                   
                 </div>
               </div>
