@@ -24,7 +24,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#home" className="text-2xl font-bold text-gradient">
-          Khawar Sultan
+          Riz Ahmed
         </a>
         
         <div className="hidden md:flex items-center space-x-8">
