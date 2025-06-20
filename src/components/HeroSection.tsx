@@ -75,7 +75,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-neon rounded-full blur opacity-70"></div>
               <div className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden relative border-4 border-dark-bg">
-                <img alt="Khawar Sultan" className="w-full h-full object-cover object-center" src="/lovable-uploads/7382f7f6-af74-4765-b1ac-16ce73a47bb3.png" />
+                <img alt="Riz Ahmed" className="w-full h-full object-cover object-center" src="/lovable-uploads/7382f7f6-af74-4765-b1ac-16ce73a47bb3.png" />
               </div>
             </div>
             

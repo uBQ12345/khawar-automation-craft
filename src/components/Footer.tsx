@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-xl font-bold text-gradient">
-              Khawar Sultan
+              Riz Ahmed
             </a>
             <p className="text-gray-400 text-sm mt-2">
               AI & Workflow Automation Specialist
@@ -35,7 +35,7 @@ const Footer = () => {
         
         <div className="mt-8 pt-8 border-t border-white/5 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Khawar Sultan. All rights reserved.
+            © {currentYear} Riz Ahmed. All rights reserved.
           </p>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Index = () => {
   useScrollReveal();
 
   useEffect(() => {
-    document.title = "Khawar Sultan | AI & Workflow Automation Specialist";
+    document.title = "Riz Ahmed | AI & Workflow Automation Specialist";
     
     // Add dark mode class to document
     document.documentElement.classList.add('dark');
