@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
@@ -49,7 +48,7 @@ const HeroSection = () => {
           <div className="mt-14 flex flex-wrap gap-8">
             <div className="flex items-center">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mr-4 shadow-inner shadow-primary/5">
-                <div className="text-primary text-2xl font-bold">2+</div>
+                <div className="text-primary text-2xl font-bold">4+</div>
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Years of</p>
