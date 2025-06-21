@@ -58,7 +58,7 @@ const HeroSection = () => {
             
             <div className="flex items-center">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mr-4 shadow-inner shadow-primary/5">
-                <div className="text-primary text-2xl font-bold">50+</div>
+                <div className="text-primary text-2xl font-bold">70+</div>
               </div>
               <div>
                 <p className="text-gray-400 text-sm">Completed</p>
