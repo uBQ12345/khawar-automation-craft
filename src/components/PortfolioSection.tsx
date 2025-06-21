@@ -18,7 +18,7 @@ const PortfolioSection = () => {
     {
       title: "Telegram Automation",
       description: "Developed a system for automating notifications and chat workflows, enabling real-time alerts and interactive responses through Telegram's API.",
-      image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=2070&auto=format&fit=crop",
+      image: "/lovable-uploads/574047b3-2794-4dcb-80dd-0dfd4cf34559.png",
       tags: ["Telegram API", "Notifications", "Make.com"]
     },
     {
