@@ -12,7 +12,7 @@ const PortfolioSection = () => {
     {
       title: "RAG-Style AI Agent",
       description: "Built a retrieval-augmented-generation bot using n8n that processes customer inquiries by accessing knowledge base content, delivering contextual responses.",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad979?q=80&w=2070&auto=format&fit=crop",
+      image: "/lovable-uploads/bacb227b-b372-4d50-bf23-d0d85d52b717.png",
       tags: ["AI", "n8n", "RAG", "Knowledge Base"]
     },
     {
