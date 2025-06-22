@@ -20,7 +20,6 @@ import {
   FileSignature, 
   Bot
 } from "lucide-react";
-import { Progress } from "@/components/ui/progress";
 
 const SkillsSection = () => {
   const skills = [
@@ -129,32 +128,32 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-dark-card">
+    <section id="skills" className="py-12 bg-dark-card">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 reveal">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+        <div className="text-center mb-10 reveal">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">Skills & Expertise</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm">
             Specialized in creating robust automation solutions that transform your business operations
           </p>
-          <div className="w-20 h-1 bg-primary mx-auto mt-4"></div>
+          <div className="w-20 h-1 bg-primary mx-auto mt-3"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {skills.map((skill, index) => (
             <div 
               key={skill.name}
-              className="reveal bg-dark-bg p-6 rounded-xl shadow-lg border border-white/5 hover:border-primary/30 transition-all hover-scale"
+              className="reveal group bg-dark-bg p-4 rounded-lg shadow-lg border border-white/5 hover:border-primary/30 transition-all hover-scale"
             >
-              <div className="flex items-start">
-                <div className="p-3 rounded-lg bg-primary/10 text-primary mr-4">
-                  <skill.icon size={24} />
+              <div className="flex items-center mb-3">
+                <div className="p-2 rounded-lg bg-primary/10 text-primary mr-3 flex-shrink-0">
+                  <skill.icon size={18} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                  <p className="text-gray-400 text-sm mb-4">{skill.description}</p>
-                  <div className="w-full h-2 bg-dark-bg rounded-full overflow-hidden border border-white/10">
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-sm font-bold mb-1 leading-tight">{skill.name}</h3>
+                  <p className="text-gray-400 text-xs mb-2 leading-tight">{skill.description}</p>
+                  <div className="w-full h-1.5 bg-dark-bg rounded-full overflow-hidden border border-white/10">
                     <div 
-                      className="h-full bg-primary" 
+                      className="h-full bg-primary transition-all duration-500" 
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
