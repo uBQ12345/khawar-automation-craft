@@ -20,6 +20,13 @@ import {
   FileSignature, 
   Bot
 } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const SkillsSection = () => {
   const skills = [
@@ -127,6 +134,12 @@ const SkillsSection = () => {
     },
   ];
 
+  // Group skills into slides of 4
+  const skillSlides = [];
+  for (let i = 0; i < skills.length; i += 4) {
+    skillSlides.push(skills.slice(i, i + 4));
+  }
+
   return (
     <section id="skills" className="py-12 bg-dark-card">
       <div className="container mx-auto px-4">
@@ -138,29 +151,41 @@ const SkillsSection = () => {
           <div className="w-20 h-1 bg-primary mx-auto mt-3"></div>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {skills.map((skill, index) => (
-            <div 
-              key={skill.name}
-              className="reveal group bg-dark-bg p-4 rounded-lg shadow-lg border border-white/5 hover:border-primary/30 transition-all hover-scale"
-            >
-              <div className="flex items-center mb-3">
-                <div className="p-2 rounded-lg bg-primary/10 text-primary mr-3 flex-shrink-0">
-                  <skill.icon size={18} />
-                </div>
-                <div className="min-w-0 flex-1">
-                  <h3 className="text-sm font-bold mb-1 leading-tight">{skill.name}</h3>
-                  <p className="text-gray-400 text-xs mb-2 leading-tight">{skill.description}</p>
-                  <div className="w-full h-1.5 bg-dark-bg rounded-full overflow-hidden border border-white/10">
-                    <div 
-                      className="h-full bg-primary transition-all duration-500" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
+        <div className="reveal">
+          <Carousel className="w-full max-w-6xl mx-auto">
+            <CarouselContent>
+              {skillSlides.map((slide, slideIndex) => (
+                <CarouselItem key={slideIndex}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {slide.map((skill) => (
+                      <div 
+                        key={skill.name}
+                        className="group bg-dark-bg p-4 rounded-lg shadow-lg border border-white/5 hover:border-primary/30 transition-all hover-scale"
+                      >
+                        <div className="flex items-center mb-3">
+                          <div className="p-2 rounded-lg bg-primary/10 text-primary mr-3 flex-shrink-0">
+                            <skill.icon size={18} />
+                          </div>
+                          <div className="min-w-0 flex-1">
+                            <h3 className="text-sm font-bold mb-1 leading-tight">{skill.name}</h3>
+                            <p className="text-gray-400 text-xs mb-2 leading-tight">{skill.description}</p>
+                            <div className="w-full h-1.5 bg-dark-bg rounded-full overflow-hidden border border-white/10">
+                              <div 
+                                className="h-full bg-primary transition-all duration-500" 
+                                style={{ width: `${skill.level}%` }}
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-              </div>
-            </div>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="text-primary border-primary/30 hover:bg-primary hover:text-white" />
+            <CarouselNext className="text-primary border-primary/30 hover:bg-primary hover:text-white" />
+          </Carousel>
         </div>
       </div>
     </section>
