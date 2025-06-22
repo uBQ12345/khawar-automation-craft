@@ -1,4 +1,3 @@
-
 import { 
   Workflow,
   Cog,
@@ -152,7 +151,7 @@ const SkillsSection = () => {
         </div>
         
         <div className="reveal">
-          <Carousel className="w-full max-w-6xl mx-auto">
+          <Carousel className="w-full max-w-6xl mx-auto relative">
             <CarouselContent>
               {skillSlides.map((slide, slideIndex) => (
                 <CarouselItem key={slideIndex}>
@@ -183,8 +182,8 @@ const SkillsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="text-primary border-primary/30 hover:bg-primary hover:text-white" />
-            <CarouselNext className="text-primary border-primary/30 hover:bg-primary hover:text-white" />
+            <CarouselPrevious className="text-primary border-primary/30 hover:bg-primary hover:text-white bg-dark-bg/80 backdrop-blur-sm -left-4 md:-left-12" />
+            <CarouselNext className="text-primary border-primary/30 hover:bg-primary hover:text-white bg-dark-bg/80 backdrop-blur-sm -right-4 md:-right-12" />
           </Carousel>
         </div>
       </div>
